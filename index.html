@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Instrument App</title>
+    <link rel="stylesheet" type="text/css" href="./css/main.css">
+    <script src="./js/app.js"></script>
+  </head>
+  <body>
+    <h1>Mike's Instrument Listing App</h1>
+    <form id="new-item-form">
+
+      <label for="make">Make:</label>
+      <input type="text" id="make" required>
+
+      <label for="model">Model:</label>
+      <input type="text" id="model" required>
+
+      <label for="category">Category:</label>
+      <select id="category">
+        <option value="" disabled selected></option>
+        <option value="Guitar">Guitar</option>
+        <option value="Bass Guitar">Bass Guitar</option>
+        <option value="Other">Other</option>
+      </select>
+      <br>
+      <label for="condition">Condition:</label>
+      <input type="radio" id="condition" value="New" required name="condition">New
+      <input type="radio" id="condition" value="Used" name="condition">Used
+      <input type="radio" id="condition" value="For parts/broken" name="condition">For parts/broken
+
+      <input type="submit" value="save">
+
+    </form>
+
+    <button id="delete-all">Delete all instruments</button>
+
+    <h2>Instrument List</h2>
+    <ul id="instrument-list"></ul>
+  </body>
+</html>
