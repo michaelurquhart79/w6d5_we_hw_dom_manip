@@ -10,24 +10,32 @@
     <h1>Mike's Instrument Listing App</h1>
     <form id="new-item-form">
 
-      <label for="make">Make:</label>
-      <input type="text" id="make" required>
+      <div class="form-item">
+        <label for="make">Make:</label>
+        <input type="text" id="make" required>
+      </div>
 
-      <label for="model">Model:</label>
-      <input type="text" id="model" required>
+      <div class="form-item">
+        <label for="model">Model:</label>
+        <input type="text" id="model" required>
+      </div>
 
-      <label for="category">Category:</label>
-      <select id="category">
-        <option value="" disabled selected></option>
-        <option value="Guitar">Guitar</option>
-        <option value="Bass Guitar">Bass Guitar</option>
-        <option value="Other">Other</option>
-      </select>
-      <br>
-      <label for="condition">Condition:</label>
-      <input type="radio" id="condition" value="New" required name="condition">New
-      <input type="radio" id="condition" value="Used" name="condition">Used
-      <input type="radio" id="condition" value="For parts/broken" name="condition">For parts/broken
+      <div class="form-item">
+        <label for="category">Category:</label>
+        <select id="category">
+          <option value="" disabled selected></option>
+          <option value="Guitar">Guitar</option>
+          <option value="Bass Guitar">Bass Guitar</option>
+          <option value="Other">Other</option>
+        </select>
+      </div>
+
+      <div class="form-item">
+        <label for="condition">Condition:</label>
+        <input type="radio" id="condition" value="New" required name="condition">New
+        <input type="radio" id="condition" value="Used" name="condition">Used
+        <input type="radio" id="condition" value="For parts/broken" name="condition">For parts/broken
+      </div>
 
       <input type="submit" value="save">
 
